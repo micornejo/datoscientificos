@@ -1,5 +1,5 @@
 # Usamos una imagen de Ruby moderna y ligera que incluye Debian Bullseye
-FROM ruby:3.2.2-slim-bullseye
+FROM ruby:2.7-slim-bullseye
 
 # Instalamos las dependencias necesarias para Rails
 RUN apt-get update -qq && apt-get install -y \
