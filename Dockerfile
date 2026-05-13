@@ -1,14 +1,16 @@
-# syntax=docker/dockerfile:1
-FROM debian:jessie
-RUN apt-get update -qq && apt-get install -y \
-    postgresql-client libpq-dev autoconf bison build-essential libssl-dev \
-    libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev \
-    libffi-dev libgdbm3 libgdbm-dev git-core sqlite3 libsqlite3-dev curl wget \
-    ruby bundler
+# Usamos una imagen de Ruby moderna y ligera que incluye Debian Bullseye
+FROM ruby:3.2.2-slim-bullseye
 
-#RUN groupadd -r datoscientificos && \
-#    useradd -r -g datoscientificos datoscientificos && \
-#    mkdir -p /datoscientificos
+# Instalamos las dependencias necesarias para Rails
+RUN apt-get update -qq && apt-get install -y \
+  build-essential \
+  libpq-dev \
+  postgresql-client \
+  curl \
+  git \
+  nodejs \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /datoscientificos/rails
 
