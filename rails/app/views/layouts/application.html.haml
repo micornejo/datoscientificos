@@ -1,0 +1,37 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title= content_for?(:title) ? yield(:title) : "Datos Científicos Abiertos"
+    = favicon_link_tag
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "vendor/modernizr"
+    = csrf_meta_tags
+  %body{:class => params['css'] || 'css4' }
+    = render 'layouts/topbar'
+    = render 'layouts/subbar'
+    %section{'role' => 'main'}
+      = yield
+    = render "layouts/sic_footer"
+    - unless @current_user
+      = render 'layouts/auth_form'
+      = render 'layouts/identity_register_form'
+      = render 'layouts/survey_01'
+      = javascript_include_tag "application"
+      :javascript
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.datoscientificos.cl/";
+          _paq.push(['setTrackerUrl', u+'piwik.php']);
+          _paq.push(['setSiteId', 1]);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+          g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+      %noscript
+        %p
+          %img{ :src => "http://piwik.datoscientificos.cl/piwik.php?idsite=1", :style => "border:0;", :alt => "" }
+    = render "layouts/feedback"
+    = render "layouts/contact_email"

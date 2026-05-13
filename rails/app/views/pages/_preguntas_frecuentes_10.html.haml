@@ -1,0 +1,18 @@
+%li
+  - title = '¿Qué condiciones resultan análogas al dominio público?'
+  - n = 10
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Todas aquellas condiciones que supongan libertad para hacer uso de
+      las obras sin necesidad de permiso ni pago de regalías a los creadores.
+      Por ejemplo, son análogas al dominio público las condiciones mediante
+      las cuales un autor decide que su obra se puede reproducir, utilizar y
+      ejecutar públicamente sin previo pago y siempre que se respete su
+      calidad de autor en las obras derivadas.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

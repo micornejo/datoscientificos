@@ -1,0 +1,309 @@
+%div#heading-area
+  %div.row
+    %div.large-12.column
+      %h1 Propuesta de Política de Datos Abiertos
+      %p.lead
+        Le invitamos a leer la Política de Datos Abiertos.
+        Puede enviarnos sus comentarios en cada uno de los puntos para que sea
+        una política de todos.
+%div.row
+  %div.large-12.columns
+    = render 'politica_subnav'
+    = render 'layouts/breadcrumbs'
+%div#policy
+  %div.row
+    %div.large-3.column
+      %h2 1.
+      %p 
+        Los beneficiarios de todas las líneas de investigación financiadas
+        por CONICYT deberían publicar los informes, documentos y conjuntos
+        de datos resultantes de sus investigaciones en repositorios abiertos
+        y en formatos adecuados.
+      %p
+        %a.button.tiny.feedback-policy-1 Esperamos su opinión
+    %div.large-3.column
+      %h2 2.
+      %p
+        La publicación podrá hacerse efectiva, tanto en repositorios
+        centralizados en CONICYT, como en repositorios pertenecientes a
+        las instituciones a las que pertenezcan los investigadores, siempre
+        que estos últimos cumplan con los estándares acordados. En este último
+        caso, los investigadores debieran comprometerse a informar a CONICYT
+        las URL o identificadores de los documentos y conjuntos de datos
+        publicados.
+      %p
+        %a.button.tiny.feedback-policy-2 Esperamos su opinión
+    %div.large-3.column
+      %h2 3.
+      %p
+        El plazo para la publicación de los datos en los repositorios
+        abiertos no debiera superar el año después de rendido el
+        informe final, aún cuando no se hayan publicado los respectivos
+        artículos.
+      %p
+        %a.button.tiny.feedback-policy-3 Esperamos su opinión
+    %div.large-3.column
+      %h2 4.
+      %p
+        El plazo de publicación de los informes finales de las
+        investigaciones por parte de CONICYT no debiera ser mayor a
+        tres meses, una vez aprobados. El carácter de este informe
+        debiera estar en concordancia con las bases de la línea de
+        financiamiento que se esté reportando.
+      %p
+        %a.button.tiny.feedback-policy-4 Esperamos su opinión
+  %div.row
+    %div.large-3.column
+      %h2 5.
+      %p 
+        El plazo de publicación en repositorios abiertos de los
+        artículos no debiera ser superior a seis meses después de
+        publicados en revistas especializadas. Para cumplir con esta
+        obligación será suficiente publicar el preprint.
+      %p
+        %a.button.tiny.feedback-policy-5 Esperamos su opinión
+    %div.large-3.column
+      %h2 6.
+      %p
+        Cuando la investigación genere la tramitación de una patente,
+        esté vinculada a un modelo de negocios o existan compromisos
+        internacionales que lo requieran, se podrá omitir la publicación
+        de los datos más sensibles. Esta excepción no debiera exceder a los
+        dos años después de aprobado el informe final.
+      %p
+        %a.button.tiny.feedback-policy-6 Esperamos su opinión
+    %div.large-3.column
+      %h2 7.
+      %p
+        Al aceptar el financiamiento, los investigadores asumen los
+        términos y condiciones de esta política.
+      %p
+        %a.button.tiny.feedback-policy-7 Esperamos su opinión
+    %div.large-3.column
+      %h2 +
+      %p
+        Si quiere conocer más sobre los fundamentos de la política
+        propuesta descarga el manual de datos abiertos.
+      %p
+        %span.has-tip{ 'data-tooltip' => true, title: 'Descargar documento' }
+          = link_to '', {:controller => 'pages', :action => 'documentos'}, :class => 'portada-manual'
+%div#feedback-policy-1-modal.feedback-form.reveal-modal{ "data-reveal" => true }
+  %h2 1.
+  %p
+    Los beneficiarios de todas las líneas de investigación financiadas
+    por CONICYT deberían publicar los informes, documentos y conjuntos
+    de datos resultantes de sus investigaciones en repositorios abiertos
+    y en formatos adecuados.
+  = form_tag('/feedback', remote: true) do
+    %div.row
+      %div.large-12.columns
+        %p.lead Queremos escuchar su opinión
+    %div.row
+      %div.large-12.columns
+        %label ¿Está usted de acuerdo con este punto de la política?
+        %input{ :type => 'radio', :name => 'fields[radio-2]', :value => 'si' }
+          %label Sí
+        %input{ :type => 'radio', :name => 'fields[radio-2]', :value => 'no' }
+          %label No
+        %input{ :type => 'radio', :name => 'fields[radio-2]', :value => 'nose' }
+          %label No sé
+    %div.row
+      %div.large-12.columns
+        %label ¿Cuál es su opinión?
+        %textarea{ :name => 'fields[text-2]', :placeholder => 'Ingresa su opinión en no más de 1000 caracteres' }
+    %div.row
+      %div.large-12.columns
+        %p
+          = submit_tag 'Enviar', :class => 'button'
+    - unless current_user
+      = render 'layouts/auth_warning'
+  %a.close-reveal-modal &#215;
+%div#feedback-policy-2-modal.feedback-form.reveal-modal{ "data-reveal" => true }
+  %h2 2.
+  %p
+    La publicación podrá hacerse efectiva, tanto en repositorios
+    centralizados en CONICYT, como en repositorios pertenecientes a
+    las instituciones a las que pertenezcan los investigadores, siempre
+    que estos últimos cumplan con los estándares acordados. En este último
+    caso, los investigadores debieran comprometerse a informar a CONICYT
+    las URL o identificadores de los documentos y conjuntos de datos
+    publicados.
+  = form_tag('/feedback', remote: true) do
+    %div.row
+      %div.large-12.columns
+        %p.lead Queremos escuchar su opinión
+    %div.row
+      %div.large-12.columns
+        %label ¿Está usted de acuerdo con este punto de la política?
+        %input{ :type => 'radio', :name => 'fields[radio-3]', :value => 'si' }
+          %label Sí
+        %input{ :type => 'radio', :name => 'fields[radio-3]', :value => 'no' }
+          %label No
+        %input{ :type => 'radio', :name => 'fields[radio-3]', :value => 'nose' }
+          %label No sé
+    %div.row
+      %div.large-12.columns
+        %label ¿Cuál es su opinión?
+        %textarea{ :name => 'fields[text-3]', :placeholder => 'Ingresa su opinión en no más de 1000 caracteres' }
+    %div.row
+      %div.large-12.columns
+        %p
+          = submit_tag 'Enviar', :class => 'button'
+    - unless current_user
+      = render 'layouts/auth_warning'
+  %a.close-reveal-modal &#215;
+%div#feedback-policy-3-modal.feedback-form.reveal-modal{ "data-reveal" => true }
+  %h2 3.
+  %p
+    El plazo para la publicación de los datos en los repositorios
+    abiertos no debiera superar el año después de rendido el
+    informe final, aún cuando no se hayan publicado los respectivos
+    artículos.
+  = form_tag('/feedback', remote: true) do
+    %div.row
+      %div.large-12.columns
+        %p.lead Queremos escuchar su opinión
+    %div.row
+      %div.large-12.columns
+        %label ¿Está usted de acuerdo con este punto de la política?
+        %input{ :type => 'radio', :name => 'fields[radio-4]', :value => 'si' }
+          %label Sí
+        %input{ :type => 'radio', :name => 'fields[radio-4]', :value => 'no' }
+          %label No
+        %input{ :type => 'radio', :name => 'fields[radio-4]', :value => 'nose' }
+          %label No sé
+    %div.row
+      %div.large-12.columns
+        %label ¿Cuál es su opinión?
+        %textarea{ :name => 'fields[text-4]', :placeholder => 'Ingresa su opinión en no más de 1000 caracteres' }
+    %div.row
+      %div.large-12.columns
+        %p
+          = submit_tag 'Enviar', :class => 'button'
+    - unless current_user
+      = render 'layouts/auth_warning'
+  %a.close-reveal-modal &#215;
+%div#feedback-policy-4-modal.feedback-form.reveal-modal{ "data-reveal" => true }
+  %h2 4.
+  %p
+    El plazo de publicación de los informes finales de las
+    investigaciones por parte de CONICYT no debiera ser mayor a
+    tres meses, una vez aprobados. El carácter de este informe
+    debiera estar en concordancia con las bases de la línea de
+    financiamiento que se esté reportando.
+  = form_tag('/feedback', remote: true) do
+    %div.row
+      %div.large-12.columns
+        %p.lead Queremos escuchar su opinión
+    %div.row
+      %div.large-12.columns
+        %label ¿Está usted de acuerdo con este punto de la política?
+        %input{ :type => 'radio', :name => 'fields[radio-5]', :value => 'si' }
+          %label Sí
+        %input{ :type => 'radio', :name => 'fields[radio-5]', :value => 'no' }
+          %label No
+        %input{ :type => 'radio', :name => 'fields[radio-5]', :value => 'nose' }
+          %label No sé
+    %div.row
+      %div.large-12.columns
+        %label ¿Cuál es su opinión?
+        %textarea{ :name => 'fields[text-5]', :placeholder => 'Ingresa su opinión en no más de 1000 caracteres' }
+    %div.row
+      %div.large-12.columns
+        %p
+          = submit_tag 'Enviar', :class => 'button'
+    - unless current_user
+      = render 'layouts/auth_warning'
+  %a.close-reveal-modal &#215;
+%div#feedback-policy-5-modal.feedback-form.reveal-modal{ "data-reveal" => true }
+  %h2 5.
+  %p
+    El plazo de publicación en repositorios abiertos de los
+    artículos no debiera ser superior a seis meses después de
+    publicados en revistas especializadas. Para cumplir con esta
+    obligación será suficiente publicar el preprint.
+  = form_tag('/feedback', remote: true) do
+    %div.row
+      %div.large-12.columns
+        %p.lead Queremos escuchar su opinión
+    %div.row
+      %div.large-12.columns
+        %label ¿Está usted de acuerdo con este punto de la política?
+        %input{ :type => 'radio', :name => 'fields[radio-6]', :value => 'si' }
+          %label Sí
+        %input{ :type => 'radio', :name => 'fields[radio-6]', :value => 'no' }
+          %label No
+        %input{ :type => 'radio', :name => 'fields[radio-6]', :value => 'nose' }
+          %label No sé
+    %div.row
+      %div.large-12.columns
+        %label ¿Cuál es su opinión?
+        %textarea{ :name => 'fields[text-6]', :placeholder => 'Ingresa su opinión en no más de 1000 caracteres' }
+    %div.row
+      %div.large-12.columns
+        %p
+          = submit_tag 'Enviar', :class => 'button'
+    - unless current_user
+      = render 'layouts/auth_warning'
+  %a.close-reveal-modal &#215;
+%div#feedback-policy-6-modal.feedback-form.reveal-modal{ "data-reveal" => true }
+  %h2 6.
+  %p
+    Cuando la investigación genere la tramitación de una patente,
+    esté vinculada a un modelo de negocios o existan compromisos
+    internacionales que lo requieran, se podrá omitir la publicación
+    de los datos más sensibles. Esta excepción no debiera exceder a los
+    dos años después de aprobado el informe final.
+  = form_tag('/feedback', remote: true) do
+    %div.row
+      %div.large-12.columns
+        %p.lead Queremos escuchar su opinión
+    %div.row
+      %div.large-12.columns
+        %label ¿Está usted de acuerdo con este punto de la política?
+        %input{ :type => 'radio', :name => 'fields[radio-7]', :value => 'si' }
+          %label Sí
+        %input{ :type => 'radio', :name => 'fields[radio-7]', :value => 'no' }
+          %label No
+        %input{ :type => 'radio', :name => 'fields[radio-7]', :value => 'nose' }
+          %label No sé
+    %div.row
+      %div.large-12.columns
+        %label ¿Cuál es su opinión?
+        %textarea{ :name => 'fields[text-7]', :placeholder => 'Ingresa su opinión en no más de 1000 caracteres' }
+    %div.row
+      %div.large-12.columns
+        %p
+          = submit_tag 'Enviar', :class => 'button'
+    - unless current_user
+      = render 'layouts/auth_warning'
+  %a.close-reveal-modal &#215;
+%div#feedback-policy-7-modal.feedback-form.reveal-modal{ "data-reveal" => true }
+  %h2 7.
+  %p
+    Al aceptar el financiamiento, los investigadores asumen los
+    términos y condiciones de esta política.
+  = form_tag('/feedback', remote: true) do
+    %div.row
+      %div.large-12.columns
+        %p.lead Queremos escuchar su opinión
+    %div.row
+      %div.large-12.columns
+        %label ¿Está usted de acuerdo con este punto de la política?
+        %input{ :type => 'radio', :name => 'fields[radio-8]', :value => 'si' }
+          %label Sí
+        %input{ :type => 'radio', :name => 'fields[radio-8]', :value => 'no' }
+          %label No
+        %input{ :type => 'radio', :name => 'fields[radio-8]', :value => 'nose' }
+          %label No sé
+    %div.row
+      %div.large-12.columns
+        %label ¿Cuál es su opinión?
+        %textarea{ :name => 'fields[text-8]', :placeholder => 'Ingresa su opinión en no más de 1000 caracteres' }
+    %div.row
+      %div.large-12.columns
+        %p
+          = submit_tag 'Enviar', :class => 'button'
+    - unless current_user
+      = render 'layouts/auth_warning'
+  %a.close-reveal-modal &#215;

@@ -1,0 +1,15 @@
+%li
+  - title = '¿Qué pasa con las autorizaciones o licencias extendidas antes de hacerse obligatorio el acceso abierto?'
+  - n = 9
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Dichas autorizaciones se mantienen vigentes, a menos que las partes
+      decidan modificar sus condiciones para hacerlas compatibles, si es
+      que no lo son, con las políticas de acceso abierto.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

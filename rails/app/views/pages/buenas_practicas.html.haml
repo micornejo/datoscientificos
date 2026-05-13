@@ -1,0 +1,22 @@
+%div#heading-area
+  %div.row
+    %div.large-12.column
+      %h1 Buenas prácticas de publicación
+      %p.lead
+        Existen algunas prácticas que se recomiendan para la publicación
+        de información científica y datos de investigación, las que se
+        describen a continuación.
+%div.row
+  %div.large-12.columns
+    = render 'layouts/breadcrumbs'
+%div.row
+  %div.large-6.columns
+    %h2 Información
+    %ul.icon-listing
+      - (1..4).each do |i|
+        = render "pages/buenas_practicas_info_#{i}"
+  %div.large-6.columns
+    %h2 Datos
+    %ul.icon-listing
+      - (1..7).each do |i|
+        = render "pages/buenas_practicas_datos_#{i}"

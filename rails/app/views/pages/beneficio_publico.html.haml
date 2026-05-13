@@ -1,0 +1,110 @@
+%div#heading-area
+  %div.row
+    %div.large-12.column
+      %h1 Preservar y compartir genera un beneficio público
+      %p.lead
+        El acceso a la información científica y a los datos de investigación
+        beneficia a los investigadores que abren sus datos, a los
+        investigadores que pueden acceder a bases de datos provistas por
+        otros investigadores y a la sociedad en general.
+%div.row
+  %div.large-12.columns= render 'layouts/breadcrumbs'
+%div.row
+  %div.large-7.columns
+    %p
+      Si bien el argumento más fuerte para garantizar el acceso a los datos de
+      investigación es la del beneficio social que se obtendría al favorecer el
+      avance de la ciencia, resulta difícil cuantificar tales beneficios.
+    %p
+      Un proyecto ejemplar que se ha caracterizado por la apertura de valiosos
+      datos a la comunidad científica es el Proyecto Genoma Humano. Según un
+      informe elaborado por el Battelle Memorial Institute
+      propone que la inversión de $3.8 billones en
+      el Proyecto Genoma Humano entre los años 1990 y 2003 generó un retorno
+      de $796 billones [<a href="#battelle-1">1</a>] y un informe
+      más reciente eleva este número al trillón a la fecha
+      [<a href="#battelle-2">2</a>]. Sin embargo, tal
+      informe no ha estado excento de controversias. Sendos artículos publicados
+      en Nature [<a href="#nadia-drake">3</a>,<a href="#wadman">4</a>]
+      resumen las críticas de varios economistas a la metodolgía utilizada
+      en ambos informes.
+    %p
+      Otro análisis realizado en 2009 por la National Bureau of Economic
+      Research in Cambridge, Massachusetts, hacen un estudio más amplio que
+      sugiere que el retorno se aproxima a $2.50–$3 por cada dolar invertido
+      en investigación y desarrollo
+      [<a href="#hall">5</a>].
+    %p
+      Dado que cuantificar los beneficios de la inversión en R&D es un tema
+      controversial [<a href="#macilwain">6</a>], la
+      confianza de que el acceso a los datos públicos constituye
+      un bien público se fundamenta más bien en observaciones cualitativas.
+    %p
+      Sin el acceso abierto a una base de datos léxica del Inglés como
+      WordNet, no habrían sido posibles muchas de las investigaciones
+      realizadas en procesamiento de lenguajes naturales. Sin las
+      coleciones de documentos clasificados por expertos, varios
+      investigadores no habrían podido probar sus algorítmos de
+      recuperación de información. Son numerosos los casos en los que el acceso
+      abierto a un conjunto de datos ha servido al avance de la
+      ciencia permitiendo la instalación de estándares para la evaluación
+      de hipótesis. De lo contrario, como se afirma que esta ocurriendo
+      en algunas áreas como el estudio de las redes sociales, al no contar
+      con un acceso abierto a los datos, se terminan generando artículos
+      cuyas hipótesis no pueden ser corroboradas por la comunidad científica
+      [<a href="#lazer">7</a>].
+    %p
+      Los beneficios públicos que se obtienen al disponer de datos que pueden
+      ser reutilizados por otros investigadores o que pueden permitir validar
+      las hipótesis planteadas han motivado a
+      la Comisión Nacional de Investigación Científica y Tecnológica,
+      CONICYT, a invitar a la comunidad científica chilena a intercambiar ideas en
+      torno al diseño e implementación de una política nacional para el acceso
+      y la preservación de datos de investigación financiados con fondos
+      públicos, en el entendido de que los científicos y las instituciones
+      de investigación desempeñan un rol fundamental a la hora de garantizar
+      la preservación y facilitar el acceso a los datos. Contar con su
+      colaboración no sólo aumentará el impacto de sus propias investigaciones,
+      sino que también generará un activo que estará disponible para toda la
+      comunidad científica, lo que potenciará a la investigación en general.
+    %h2 Referencias
+    %ol
+      %li#battelle-1
+        Battelle Memorial Institute (2011)
+        %a{ href: 'http://www.unitedformedicalresearch.com/wp-content/uploads/2012/08/Economic-Impact-of-the-Human-Genome-Project.pdf', target: 'blank' }
+          Economic Impact of The Human Genome Project
+      %li#battelle-2
+        Battelle Memorial Institute (2013)
+        %a{ href: 'http://www.unitedformedicalresearch.com/wp-content/uploads/2013/06/The-Impact-of-Genomics-on-the-US-Economy.pdf', target: 'blank' }
+          The Impact of Genomic in the U.S. Economy
+      %li#nadia-drake
+        Nadia Drake (2011)
+        %a{ href: 'http://www.nature.com/news/2011/110511/full/news.2011.281.html', target: 'blank' }
+          What is the human genome worth?
+        Nature: doi:10.1038/news.2011.281.
+      %li#wadman
+        Meredith Wadman (2013)
+        %a{ href: '', target: 'blank' }
+          Economic return from Human Genome Project grows
+        Nature: doi:10.1038/nature.2013.13187.
+      %li#hall
+        Hall, B. H., Mairesse, J. & Mohnen, P. (2009)
+        %a{ href: 'http://www.nber.org/papers/w15622', target: 'blank' }
+          Measuring the Returns to R&D
+        National Bureau of Economic Research. Working Paper No. 15622.
+      %li#macilwain
+        Colin Macilwain (2010)
+        %a{ href: 'http://www.nature.com/news/2010/100609/full/465682a.html', target: 'blank' }
+          Science economics: What science is really worth
+        Nature: doi:10.1038/465682a.
+      %li#lazer
+        D. Lazer et al.
+        %a{ href: 'http://gking.harvard.edu/files/gking/files/LazPenAda09.pdf', target: 'blank' }
+          Computational Social Science
+        Science, vol. 323. 
+  %div.large-5.columns
+    %h2 Otras razones
+    = render 'beneficio_investigador_resumen'
+    = render 'tendencia_mundial_resumen'
+
+

@@ -1,0 +1,30 @@
+%li
+  - title = 'Asignar un identificador a los datos'
+  - n = 5
+  - id = "good-practice-datos-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Para poder referenciar los datos hay que identificarlos con un sistema
+      estándar. De este modo, ese identificador se podrá usar tanto en el
+      artículo para el que se generaron los datos como en artículos de otros
+      investigadores que reutilicen esos datos. En la web, un buen
+      identificador son las URL, por su globalidad y porque permiten acceder
+      a información sobre el objeto identificado. De este modo, la manera más
+      sencilla de publicar los datos es asignarles una URL que permita
+      descargar el archivo y acceder a su descripción.
+    %p
+      Si bien las URL pueden facilitar el acceso a los datos, en el largo
+      plazo pueden presentar limitaciones. Un problema común es la
+      desaparición del sitio donde se publicaban archivos de datos o cambios
+      en su dominio. Una solución son los identificadores generados a partir
+      de los datos y que son independientes del lugar donde éstos se publiquen.
+    %p
+      El uso adecuado de identificadores en los datos y en los artículos
+      facilitará la formación de una red virtuosa entre la literatura
+      científica y los datos.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

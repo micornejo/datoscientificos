@@ -1,0 +1,33 @@
+%li
+  - title = 'Utilizar repositorios interoperables'
+  - n = 4
+  - id = "good-practice-info-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Las principales plataformas de repositorios abiertos permiten la
+      búsqueda federada de documentos y cosechar registros entre ellos de
+      manera automática. Para que ello sea posible se requieren estándares
+      de interoperabilidad para los metadatos de los documentos y para la
+      comunicación entre los repositorios.
+    %p
+      El principal estándar de metadatos es Dublin Core, que define un
+      conjunto de atributos mínimos (título, resumen, autores, materias,
+      fechas, etc.) que debieran describir cada documento de un repositorio.
+    %p
+      La Open Archive Initiative (OAI) es la principal autoridad en la
+      definición de estándares de interoperabilidad entre repositorios
+      abiertos. Entre los estándares definidos se encuentran un protocolo de
+      cosecha de metadatos, un estándar para describir e intercambiar
+      descripciones de agregación entre componentes de recursos y un marco
+      para sincronización de archivos.
+    %p
+      Entre las plataformas de respositorios documentales existentes se
+      recomienda la utilización de DSPace, por su robustez, flexibilidad y
+      satisfactorio soporte de los estándares abiertos de metadatos y
+      comunicación entre repositorios.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

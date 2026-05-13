@@ -1,0 +1,82 @@
+%div#heading-area
+  %div.row
+    %div.large-12.column
+      %h1
+        ¿Sabías que el mundo está avanzando en compartir los datos de investigación?
+    %p.lead
+      Numerosos países y organizaciones internacionales han acordado
+      compartir y preservar los datos de investigación científica.
+      Ejemplos de ellos son la OECD, la Unión Europea, el G8 y la UNESCO.
+%div.row
+  %div.large-12.columns= render 'layouts/breadcrumbs'
+%div.row
+  %div.large-7.columns
+    %p
+      Con el surgimiento de tecnología que permite capturar y procesar grandes
+      volúmenes de datos, los datos de investigación cobran un rol fundamental
+      en la ciencia y son necesarios para validar modelos y chequear hipótesis.
+      Incluso, al encontrarse disponibles pueden ser reutilizados para proponer
+      otras hipótesis o servir como herramienta en los procesos de evaluación.
+    %p
+      La importancia del acceso abierto a los datos de investigación científica
+      es ampliamente reconocida. Varios gobiernos y organismos internacionales
+      han realizado investigaciones al respecto, que han motivado acuerdos para
+      compartir y preservar los datos. El informe sobre Ciencia y Tecnología
+      2012  de la OECD [<a href="#oecd-2012">1</a>] reconoce el modelo de ciencia
+      abierta como una de las principales estrategias para fortalecer el
+      desarrollo de la ciencia en el mundo.
+    %blockquote
+      Tiene el potencial de mejorar la eficiencia y la calidad de la
+      investigación mediante la reducción de los costos de recolección de
+      datos, facilitando la explotación de datos inactivos o accesibles a
+      bajo costo y mediante el aumento de oportunidades de colaboración en
+      la investigación y en la innovación.
+      %cite Informe OECD 2012 [<a href="#oecd-2012">1</a>].
+    %p
+      La OECD ha elaborado directrices que orientan estrategias para el
+      acceso a los datos de investigación científica generados con fondos
+      públicos [<a href="#oecd-2007">2</a>]. A ello se suman los acuerdos
+      alcanzados por la Unión Europea [<a href="#eu-2012">3</a>],
+      el G8 [<a href="#g8-2013">4</a>] y la UNESCO
+      [<a href="#unesco-2013">5</a>].
+    %p
+      Lo planteado por estos organismos internacionales ha motivado a la
+      Comisión Nacional de Investigación Científica y Tecnológica, CONICYT,
+      a invitar a la comunidad científica chilena a intercambiar ideas en
+      torno al diseño e implementación de una política nacional para el acceso
+      y la preservación de datos de investigación financiados con fondos
+      públicos, en el entendido de que los científicos y las instituciones
+      de investigación desempeñan un rol fundamental a la hora de garantizar
+      la preservación y facilitar el acceso a los datos. Contar con su
+      colaboración no sólo aumentará el impacto de sus propias investigaciones,
+      sino que también generará un activo que estará disponible para toda la
+      comunidad científica, lo que potenciará a la investigación en general.
+    %h2 Referencias
+    %ol
+      %li#oecd-2012
+        OECD (2012).
+        %a{ href: 'http://www.oecd.org/sti/oecdsciencetechnologyandindustryoutlook.htm' }
+          OECD Science, Technology and Industry Outlook.
+      %li#oecd-2007
+        OECD (2007).
+        %a{ href: 'http://www.oecd.org/sti/sci-tech/38500813.pdf' }
+          OECD Principles and Guidelines for Access to Research Data from
+          Public Funding.
+      %li#eu-2012
+        Unión Europea (2012)
+        %a{ href: 'http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2012:194:0039:0043:ES:PDF' }
+          Recomendación de la Comisión de 17 de Junio de 2012 relativa al
+          acceso a la información científica y su preservación. DOUE L
+          nº 194, 21.07.2012.
+      %li#g8-2013
+        G8 (2013).
+        %a{ href: 'https://www.gov.uk/government/publications/open-data-charter/g8-open-data-charter-and-technical-annex' }
+          Open Data Charter and Technical Annex.
+      %li#unesco-2013
+        UNESCO (2013).
+        %a{ href: 'http://unesdoc.unesco.org/images/0022/002225/222536S.pdf' }
+          Directrices para Políticas de Desarrollo y Promoción del Acceso Abierto.
+  %div.large-5.columns
+    %h2 Otras razones
+    = render 'beneficio_investigador_resumen'
+    = render 'beneficio_publico_resumen'

@@ -1,0 +1,29 @@
+%h1 Listing user_identities
+
+%table
+  %tr
+    %th User
+    %th Provider
+    %th Uid
+    %th Nickname
+    %th Location
+    %th Description
+    %th
+    %th
+    %th
+
+  - @user_identities.each do |user_identity|
+    %tr
+      %td= user_identity.user_id
+      %td= user_identity.provider
+      %td= user_identity.uid
+      %td= user_identity.nickname
+      %td= user_identity.location
+      %td= user_identity.description
+      %td= link_to 'Show', user_identity
+      %td= link_to 'Edit', edit_user_identity_path(user_identity)
+      %td= link_to 'Destroy', user_identity, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New User identity', new_user_identity_path

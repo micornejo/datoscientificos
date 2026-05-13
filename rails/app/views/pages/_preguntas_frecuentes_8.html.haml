@@ -1,0 +1,17 @@
+%li
+  - title = '¿Qué significa dominio público?'
+  - n = 8
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Dominio público es el estado legal en que están ciertas obras
+      intelectuales, ya sea por el paso del tiempo o por la decisión
+      de su titular. En el dominio público las obras pueden ser
+      utilizadas y reproducidas sin necesidad de que el titular entregue
+      su permiso.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

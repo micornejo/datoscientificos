@@ -1,0 +1,40 @@
+%div#identity-register-form-modal.reveal-modal{ "data-reveal" => true }
+  %h1 Nuevo usuario
+  = form_tag "/auth/identity/register", 'data-abide' => true do
+    - if @identity && @identity.errors.any?
+      .error_messages
+        %h2
+          = pluralize(@identity.errors.count, "error")
+          prohibited this account from being saved:
+        %ul
+          - @identity.errors.full_messages.each do |msg|
+            %li= msg
+    .field.name-field
+      %label
+        Nombre
+        %small Requerido
+      = text_field_tag :name, @identity.try(:name), html: { required: true }
+      %small.error Su nombre es necesario.
+    .field.email-field
+      %label{'for' => 'auth_key'}
+        Email
+        %small Requerido
+      = email_field_tag :email, @identity.try(:email), html: { required: true }
+      %small.error El email es necesario y debe ser ingresado en formato válido.
+    .field.password-confirmation-field
+      %label{'for' => 'password'}
+        Contraseña
+        %small Requerido
+      = password_field_tag :password
+      %small.error
+        Las contraseñas deben tener al menos 8 caracteres con una letra
+        mayúscula, un número y un caracter especial.
+    .field
+      %label
+        Repita su contraseña
+        %small Requerido
+      = password_field_tag :password_confirmation, html: { required: true, 'data-equalto' => 'password' }
+      %small.error
+        Las contraseñas no coninciden.
+    .actions= submit_tag "Registrar", :class => 'button'
+  %a.close-reveal-modal &#215;

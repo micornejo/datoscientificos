@@ -1,0 +1,18 @@
+%li
+  - title = '¿Qué derecho tiene el fabricante de una base de datos?'
+  - n = 5
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      En Chile, a diferencia de otros países, el fabricante no tiene
+      derechos sobre una base de datos. Incluso si la base de datos es
+      original, sea por la originalidad de la selección o por la
+      disposición de sus contenidos, el fabricante no tiene derechos sobre
+      ella. Quien sí podría eventualmente tener derechos es el creador de
+      la base de datos.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

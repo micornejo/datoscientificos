@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @session.user_id
+%p
+  %b Provider:
+  = @session.provider
+%p
+  %b Uid:
+  = @session.uid
+%p
+  %b Remote ip:
+  = @session.remote_ip
+%p
+  %b User agent:
+  = @session.user_agent
+%p
+  %b Closed at:
+  = @session.closed_at
+
+= link_to 'Edit', edit_session_path(@session)
+\|
+= link_to 'Back', sessions_path

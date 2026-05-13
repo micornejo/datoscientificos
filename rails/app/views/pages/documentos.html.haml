@@ -1,0 +1,40 @@
+%div#heading-area
+  %div.row
+    %div.large-12.columns
+      %h1 Descarga de documentos
+      %p.lead
+        Los siguientes documentos fueron realizados por el Área de Información
+        Científica de CONICYT o han servido en el proceso de formulación de
+        una Política de Datos Abiertos para las investigaciones realizadas con
+        fondos públicos.
+%div.row
+  %div.large-12.columns
+    = render 'politica_subnav'
+    = render 'layouts/breadcrumbs'
+%div
+  %div.row
+    %div.large-4.columns
+      %h3 Manual de Datos Abiertos
+      %p Enero de 2014
+      %p
+        Manual que explica la política de datos abiertos de CONICYT y
+        entrega recomendaciones para el acceso y preservación de información
+        científica y datos de investigación.
+      %p= link_to 'Descargar', '/files/manual-2014.pdf', :class => 'button', :target => '_blank'
+    %div.large-2.columns.show-for-medium-up
+      %span.has-tip{ 'data-tooltip' => true, title: 'Descargar documento' }
+        %a.portada-manual{ href: '/files/manual-2014.pdf', :target => '_blank'}
+    %div.large-4.columns
+      %h3
+        Estado del arte nacional e internacional en materia de
+        gestión de datos de investigación e información científica
+        y tecnológica y recomendaciones de buenas prácticas
+      %p Julio de 2010
+      %p
+        Documento Ejecutivo que resume el Benchmarking Internacional, el
+        Análisis de Capacidades Chilenas, aprendizajes internacionales y
+        Recomendaciones de Buenas Prácticas.
+      %p= link_to 'Descargar', '/files/ufro-2010.pdf', :class => 'button', :target => '_blank'
+    %div.large-2.columns.show-for-medium-up
+      %span.has-tip{ 'data-tooltip' => true, title: 'Descargar documento' }
+        %a.portada-ufro{ href: '/files/ufro-2010.pdf', :target => '_blank'}

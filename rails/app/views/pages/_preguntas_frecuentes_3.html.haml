@@ -1,0 +1,25 @@
+%li
+  - title = '¿Qué bases de datos se protegen por derechos de propiedad intelectual?'
+  - n = 3
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Según el sistema de derecho de autor chileno sólo se protegen las bases
+      de datos cuando, por razones de la selección o disposición de sus
+      contenidos, puedan considerarse originales y, por consiguiente,
+      constituyan creaciones de carácter intelectual. Sin embargo, es
+      discutible qué hace una obra original, pero en general se entiende
+      como tal el hecho de que sea distinguible formalmente de otras obras
+      similares. Por ejemplo, un tabla de datos meteorológicos podría
+      considerarse una obra si es publicada en una aplicación que visualice
+      las temperaturas con colores sobre un mapa y permita desplazarse por
+      superficie o por el tiempo. No obstante, aunque esta publicación sea
+      considerada una obra, los datos podrían ser extraídos de ella, puestos
+      sobre una tabla y redistribuidos libremente, ya que por sí solos, no son
+      obras originales.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

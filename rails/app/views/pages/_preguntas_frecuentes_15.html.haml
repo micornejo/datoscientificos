@@ -1,0 +1,13 @@
+%li
+  - title = '¿Puedo revocar mi permiso de brindar acceso abierto a datos?'
+  - n = 15
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      El permiso es, en principio, irrevocable. Esto no significa que no puedan cambiar las condiciones de acceso entregadas en un primer momento. Significa que el titular de los derechos no puede impedir que quienes accedieron a los datos cuando se encontraban en acceso abierto puedan continuar haciendo uso de los mismos de acuerdo con esas condiciones.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

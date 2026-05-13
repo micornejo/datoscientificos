@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @role.user_id
+%p
+  %b Label:
+  = @role.label
+
+= link_to 'Edit', edit_role_path(@role)
+\|
+= link_to 'Back', roles_path

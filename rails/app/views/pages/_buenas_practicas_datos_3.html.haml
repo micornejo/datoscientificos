@@ -1,0 +1,17 @@
+%li
+  - title = 'Asesorarse con especialistas'
+  - n = 3
+  - id = "good-practice-datos-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      La publicación y gestión de datos es una tarea intrínsecamente
+      interdisciplinaria. Por ello puede ser útil pedir asesoría a
+      profesionales del área de las ciencias de la información e
+      informática, en particular a quienes se dedican a la gestión de
+      datos y que tienen vocación por el acceso abierto.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

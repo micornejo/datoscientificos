@@ -1,0 +1,27 @@
+%h1 Listing feedback_entries
+
+%table
+  %tr
+    %th Feedback field
+    %th User
+    %th Value
+    %th Status
+    %th Post
+    %th
+    %th
+    %th
+
+  - @feedback_entries.each do |feedback_entry|
+    %tr
+      %td= feedback_entry.feedback_field_id
+      %td= feedback_entry.user_id
+      %td= feedback_entry.value
+      %td= feedback_entry.status
+      %td= feedback_entry.post_id
+      %td= link_to 'Show', feedback_entry
+      %td= link_to 'Edit', edit_feedback_entry_path(feedback_entry)
+      %td= link_to 'Destroy', feedback_entry, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Feedback entry', new_feedback_entry_path

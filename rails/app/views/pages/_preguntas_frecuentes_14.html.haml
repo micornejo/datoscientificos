@@ -1,0 +1,13 @@
+%li
+  - title = '¿Puedo impedir el uso indebido o incorrecto de los datos que pongo a disposición del público en cumplimiento del acceso abierto a datos?'
+  - n = 14
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      No. El cumplimiento del estándar de dominio público respecto de los datos supone que éstos tienen un ciclo de vida distinto de aquél por el cual inicialmente se crearon. Así, quien generó dichos datos no puede controlar los resultados que el tratamiento alternativo de los mismos pueda suponer en el futuro.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

@@ -1,0 +1,68 @@
+%div#heading-area
+  %div.row
+    %div.large-12.columns
+      %h1 Presentación
+      %p.lead
+        Históricamente, la comunidad científica ha compartido los resultados
+        de sus investigaciones a través de artículos, reportes, libros y
+        otros recursos de información científica. En contraste, los datos
+        que sustentan las hipótesis y modelos solían recibir una menor
+        atención.
+%div.row
+  %div.large-12.columns
+    = render 'layouts/breadcrumbs'
+%div
+  %div.row
+    %div.large-7.columns
+      %p
+        En la actualidad, con el surgimiento de tecnología de última
+        generación que permite capturar, procesar y almacenar grandes
+        volúmenes de información, los datos de investigación adquieren
+        un rol fundamental en la ciencia y son necesarios para validar
+        modelos y chequear hipótesis.
+      %p
+        En este contexto, el acceso abierto a los datos de investigación
+        ha adquirido una creciente  relevancia, y varios gobiernos y
+        organismos internacionales han desarrollado diversas
+        investigaciones que han motivado acuerdos para compartir y
+        preservar datos. Por ejemplo,  el informe sobre Ciencia y
+        Tecnología elaborado en 2012 por la OECD reconoce el modelo de
+        ciencia abierta como una de las principales estrategias para
+        fortalecer el desarrollo de la ciencia en el mundo.
+      %p
+        “Tiene el potencial de mejorar la eficiencia y la calidad de la
+        investigación mediante la reducción de los costos de la recolección
+        de datos, facilitando la explotación de datos inactivos o accesibles
+        a bajo costo y mediante el aumento de las oportunidades de
+        colaboración en la investigación y en la innovación”, sostiene la
+        organización.
+      %p
+        La preservación de datos y su aseguramiento adquiere también otra
+        dimensión cuando se considera la vulnerabilidad que enfrentan países
+        como el nuestro ante catástrofes naturales de envergadura –como
+        terremotos o siniestros originados por el descuido humano– que
+        pueden colocar en riesgo toda la riqueza y el tiempo invertido en
+        la recolección de datos de investigación.
+      %p
+        Resulta de  máximo interés resguardar todo este valor para la
+        sociedad y futuras generaciones de investigadores, como una forma de
+        preservarlo en el tiempo y que éste se encuentre al servicio de la
+        sociedad, en coherencia con su carácter de bien público y el notable
+        apoyo que presta el Estado a la labor investigativa nacional.
+    %div.large-5.columns
+      %h3= link_to 'Política de Datos Abiertos', :action => 'politica'
+      %p
+        Le invitamos a leer nuestra propuesta de
+        = link_to 'Política de Datos Abiertos', :action => 'politica'
+        y a opinar sobre ella.
+      %h3= link_to 'Documentación', :action => 'documentos'
+      %p
+        En este sitio puede encontrar
+        = link_to 'documentación', :action => 'documentos'
+        en la que se sustenta la política propuesta.
+      %h3= link_to 'Calendario de eventos', :action => 'eventos'        
+      %p
+        Tenemos el agrado de invitarle a participar de la discusión de la
+        política en los
+        = link_to 'eventos', :action => 'eventos'
+        que se organizarán para ello.

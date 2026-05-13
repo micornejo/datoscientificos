@@ -1,0 +1,18 @@
+%div.row
+  %div.large-12.columns
+    %h1 Preguntas activas
+
+    %table
+      %tr
+        %th Id
+        %th Tipo
+        %th Título
+        %th
+
+      - @fields.each_value do |feedback_field|
+        %tr
+          %td= feedback_field.id
+          %td= feedback_field.type
+          %td= feedback_field.title
+          %td= link_to 'Mostrar', controller: 'feedback_fields', action: 'show', id: feedback_field.id
+

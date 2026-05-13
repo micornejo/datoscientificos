@@ -1,0 +1,17 @@
+%li
+  - title = '¿El acceso abierto implica renunciar a la propiedad sobre la base de datos?'
+  - n = 7
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p 
+      No. Una política de acceso abierto no atenta contra la titularidad o
+      propiedad de los datos susceptibles de protección. El acceso abierto
+      es un conjunto de garantías que permite a terceros poder acceder y
+      manipular ciertas obras intelectuales, en este caso datos, en
+      determinadas condiciones que respeten la titularidad del autor.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

@@ -1,0 +1,9 @@
+%div#feedback-link
+  %a.button Sugerencias
+%div#feedback-modal.feedback-form.reveal-modal{ "data-reveal" => true }
+  %h1 Sugerencias
+  = form_tag('/feedback', remote: true) do
+    %label
+    %textarea{ :name => 'fields[text-9]', :placeholder => 'Agradeceremos que nos envíe sugerencias para mejorar este sitio.' }
+    = submit_tag 'Enviar', :class => 'button'
+    %a.close-reveal-modal &#215;

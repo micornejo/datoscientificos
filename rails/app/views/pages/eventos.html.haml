@@ -1,0 +1,27 @@
+%div#heading-area
+  %div.row
+    %div.large-12.columns
+      %h1 Calendario de Eventos
+      %p.lead
+        La Ciencia la hacemos entre todos
+%div.row
+  %div.large-12.columns
+    = render 'layouts/breadcrumbs'
+%div
+  %div.row
+    %div.large-12.columns
+      %h3
+        = link_to '1er Encuentro de Datos Científicos Abiertos', action: 'evento_1'
+      %p
+        Se presentará y discutirá sobre la
+        = link_to 'política propuesta', action: 'politica'
+        por CONICYT
+        con los asistentes. Esperamos su participación en definición de la
+        política de preservación y acceso a datos e información científica
+        que Chile necesita.
+      %p
+        %b Fecha y lugar:
+        Viernes 26 de Septiembre de 2014, Sala Sesiones,
+        Ex Congreso Nacional, Morandé 441, Santiago, Chile.
+      %p
+        = link_to 'Inscripción y Programa', {action: 'evento_1'}, class: 'button'

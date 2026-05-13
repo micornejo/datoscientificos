@@ -1,0 +1,19 @@
+%li
+  - title = 'Asegurar la perdurabilidad de los datos'
+  - n = 6
+  - id = "good-practice-datos-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Publicar los datos en un sitio web personal tiene el riesgo de que
+      el sitio sea borrado por descuido o que los datos dejen de estar
+      disponibles si algo le ocurre al dueño del sitio. Para que los
+      datos perduren se recomienda publicarlos en lugares más estables
+      como repositorios institucionales de datos o en repositorios abiertos.
+      Si en su organización no existe un repositorio para datos, se debe
+      fomentar la creación de uno.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

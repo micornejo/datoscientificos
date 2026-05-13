@@ -1,0 +1,25 @@
+%div#heading-area
+  %div.row
+    %div.large-12.column
+      %h1 Preguntas Frecuentes
+      %p.lead
+        A continuación se presentan algunas preguntas y respuestas para clarificar
+        dudas frecuentes en torno a los aspectos legales y operacionales de
+        la publicación de datos de investigación.
+%div.row
+  %div.large-12.columns
+    = render 'politica_subnav'
+    = render 'layouts/breadcrumbs'
+%div.row
+  %div.large-4.columns
+    %ul.icon-listing
+      - (1..6).each do |i|
+        = render "pages/preguntas_frecuentes_#{i}"
+  %div.large-4.columns
+    %ul.icon-listing
+      - (7..12).each do |i|
+        = render "pages/preguntas_frecuentes_#{i}"
+  %div.large-4.columns
+    %ul.icon-listing
+      - (13..16).each do |i|
+        = render "pages/preguntas_frecuentes_#{i}"

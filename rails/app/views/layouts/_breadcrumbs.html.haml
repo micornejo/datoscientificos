@@ -1,0 +1,7 @@
+%div#breadcrumbs
+  %ul.breadcrumbs
+    %li= link_to breadcrumbs_name(''), '/'
+    - names = request.fullpath.split('/')
+    - (1...names.size-1).each do |i|
+      %li= link_to breadcrumbs_name(names[i]), names[0,i+1].join('/')
+    %li.current= breadcrumbs_name(names.last)

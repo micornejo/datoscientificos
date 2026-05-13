@@ -1,0 +1,44 @@
+%div#top-menu-nav.show-for-medium-up
+  %dl.sub-nav
+    %dt= link_to image_tag('logo-beta.png', :class => 'logo'), '/'
+    = active_link '<i class="fi-home"></i>'.html_safe, 'pages', 'index', 'dd'
+    = active_link 'Presentación', 'pages', 'presentacion', 'dd'
+    = active_link 'Participación', 'pages', 'participacion', 'dd'
+    = active_link 'Política', 'pages', 'politica', 'dd'
+    = active_link 'Beneficios', 'pages','beneficios', 'dd'
+    = active_link 'Buenas Prácticas', 'pages', 'buenas_practicas', 'dd'
+    = active_link 'Noticias', 'pages', 'noticias', 'dd'
+    - # active_link 'Testimonios', 'pages', 'testimonios', 'dd'
+    = active_link 'Eventos', 'pages', 'eventos', 'dd'
+    %dt &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    %dd.social
+      %a{'href' => 'http://twitter.com/DatosCientific', target: '_blank' }
+        %i.fi-social-twitter
+    %dd.social
+      %a{'href' => 'https://www.facebook.com/pages/Datos-Cient%C3%ADficos/408381202630100', target: '_blank' }
+        %i.fi-social-facebook
+    %dd.social
+      %a.email-contacto{ 'data-reveal-id' => 'contact-email-modal', 'data-reveal' => true }
+        %i.fi-mail
+%div#top-menu-nav-mobile.row.show-for-small-only
+  %div.columns.mobile-logo
+    = link_to image_tag('logo-beta.png', :class => 'logo'), '/'
+  %div.columns
+    %ul
+      = active_link 'Portada', 'pages', 'index', 'li'
+      = active_link 'Presentación', 'pages', 'presentacion', 'li'
+      = active_link 'Participación', 'pages', 'participacion', 'li'
+      = active_link 'Política', 'pages', 'politica', 'li'
+      = active_link 'Beneficios', 'pages','beneficios', 'li'
+      = active_link 'Buenas Prácticas', 'pages', 'buenas_practicas', 'li'
+      = active_link 'Marco Legal', 'pages', 'preguntas_frecuentes', 'li'
+      = active_link 'Noticias', 'pages', 'noticias', 'li'
+      - # active_link 'Testimonios', 'pages', 'testimonios', 'li'
+      = active_link 'Documentos', 'pages', 'documentos', 'li'
+  %div.columns.social-links
+    %a{'href' => 'http://twitter.com/DatosCientific', target: '_blank' }
+      %i.fi-social-twitter
+    %a{'href' => 'https://www.facebook.com/pages/Datos-Cient%C3%ADficos/408381202630100', target: '_blank' }
+      %i.fi-social-facebook
+    %a.email-contacto
+      %i.fi-mail{ 'data-reveal-id' => 'contact-email-modal', 'data-reveal' => true }

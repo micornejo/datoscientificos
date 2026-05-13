@@ -1,0 +1,52 @@
+---
+- :id: text-1
+  :type: text
+  :title: '¿Por qué crees (o no crees) que Chile necesita una política de datos abiertos?'
+- :id: text-2
+  :type: text
+  :title: '¿Cuál es tu opinión sobre el punto 1 de la política?'
+- :id: text-3
+  :type: text
+  :title: '¿Cuál es tu opinión sobre el punto 2 de la política?'
+- :id: text-4
+  :type: text
+  :title: '¿Cuál es tu opinión sobre el punto 3 de la política?'
+- :id: text-5
+  :type: text
+  :title: '¿Cuál es tu opinión sobre el punto 4 de la política?'
+- :id: text-6
+  :type: text
+  :title: '¿Cuál es tu opinión sobre el punto 5 de la política?'
+- :id: text-7
+  :type: text
+  :title: '¿Cuál es tu opinión sobre el punto 6 de la política?'
+- :id: text-8
+  :type: text
+  :title: '¿Cuál es tu opinión sobre el punto 7 de la política?'
+- :id: text-9
+  :type: text
+  :title: 'Sugerencias del sitio'
+- :id: radio-1
+  :type: radio
+  :title: '¿Crees que Chile necesita una política de datos abiertos?'
+- :id: radio-2
+  :type: radio
+  :title: '¿Estás de acuerdo con el punto 1 de la política?'
+- :id: radio-3
+  :type: radio
+  :title: '¿Estás de acuerdo con el punto 2 de la política?'
+- :id: radio-4
+  :type: radio
+  :title: '¿Estás de acuerdo con el punto 3 de la política?'
+- :id: radio-5
+  :type: radio
+  :title: '¿Estás de acuerdo con el punto 4 de la política?'
+- :id: radio-6
+  :type: radio
+  :title: '¿Estás de acuerdo con el punto 5 de la política?'
+- :id: radio-7
+  :type: radio
+  :title: '¿Estás de acuerdo con el punto 6 de la política?'
+- :id: radio-8
+  :type: radio
+  :title: '¿Estás de acuerdo con el punto 7 de la política?'

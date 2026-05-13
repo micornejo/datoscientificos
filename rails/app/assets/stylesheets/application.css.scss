@@ -1,0 +1,379 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which
+ * will include all the files listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets,
+ * vendor/assets/stylesheets, or vendor/assets/stylesheets of plugins, if
+ * any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear
+ * at the top of the compiled file, but it's generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require foundation_and_overrides
+ *= require_tree .
+ */
+
+@import 'foundation-icons';
+@import 'foundation';
+
+.css4 {
+    color: rgb(80, 80, 80);
+    h1 {
+	color: rgb(255, 85, 40);
+    }
+    h3 {
+	color: rgb(0, 121, 161)
+    }
+}
+
+.row {
+    width: 100%;
+    margin: 0px auto;
+    max-width: 71.875em;
+    &#top-logos-bar {
+	max-width: 100%;
+	padding: 5px 1em;
+	img.logo {
+	    height: 50px;
+	}
+    }
+}
+
+
+
+.footer-bottom {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    background: rgb(35, 35, 35);
+    p {
+	color: rgb(100, 100, 100);
+	font-size: 0.8rem;
+	&.links a {
+	    opacity: 0.4;
+	    &:hover {
+		opacity: 1;
+	    }
+	}
+    }
+    h4 {
+	color: rgb(100, 100, 100);
+    }
+    hr {
+	border-color: rgb(100, 100, 100);
+    }
+}
+
+ul.home-social li a {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-image: image-url('social.png');
+    &:hover {
+	opacity: 0.7;
+    }
+    &.twitter {
+	background-position: center 0px;
+    }
+    &.facebook {
+	background-position: center -200px;
+    }
+}
+
+.portada-manual {
+    float: right;
+    height: 196px;
+    width: 144px;
+    background: image-url('portada_manual.png');
+    &:hover { background: image-url('portada_manual_hover.png'); }
+}
+
+.portada-ufro {
+    float: right;
+    height: 196px;
+    width: 144px;
+    background: image-url('portada_ufro.png');
+    &:hover { background: image-url('portada_ufro_hover.png'); }
+}
+
+/* Feedback link */
+@media only screen and (min-width: 1100px) {
+    #feedback-link {
+	position: fixed;
+	display: block;
+	right: 0;
+	top: 300px;
+	margin: 0 -50px;
+	a {
+	    -webkit-transform: rotate(270deg);
+	    -moz-transform: rotate(270deg);
+	    -o-transform: rotate(270deg);
+	    writing-mode: tb-rl;
+	    color: white;
+	}
+    }
+}
+@media (max-width: 1099px) {
+    #feedback-link {
+	display: none;
+    }
+}
+
+.three-columns {
+    -moz-column-count:3; /* Firefox */
+    -webkit-column-count:3; /* Safari and Chrome */
+    column-count:3;
+}
+
+#videos {
+    margin: 0;
+}
+
+#landing-banner {
+    padding: 0;
+    background: #fff image-url('hero-bg-4.jpg') bottom repeat-x;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    .orbit-container {
+	padding-top: 0;
+	.row {
+	    padding: 1em 3em 0 3em;
+	}
+    }
+    h1, h2, h3, h4 {
+	//color: #ff5528;
+	// color: #000;
+	color: #008CBA;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6);
+	font-weight: bold;
+    }
+    p { color: #000; }
+}
+
+body.css4 {
+    .button {
+	background: #E67E22;
+	&:hover {
+	    background: #ff3802;
+	}
+    }
+}
+
+.flex-video {
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.2);
+    border: 1px solid #000;
+}
+
+#grey-row {
+    background: #eee;
+    box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.2);
+    display: table;
+    width: 100%;
+}
+
+.css4 {
+    .orbit-container {
+	padding-top: 3em;
+	.row {
+	    padding: 1em 2em;
+	}
+	h3, p {
+	    color: #000;
+	}
+	.orbit-slide-number {
+	    color: black;
+	}
+	.orbit-prev > span, .orbit-prev:hover > span {
+	    border-color: transparent black transparent transparent;
+	}
+	.orbit-next > span, .orbit-next:hover > span {
+	    border-color: transparent transparent transparent black;
+	}
+	.orbit-timer > span {
+	    border-color: #000;
+	}
+	.orbit-timer.paused > span {
+	    border-color: transparent transparent transparent black;
+	}
+    }
+}
+
+#slides {
+    margin-top: 2em;
+    img {
+	border: 1px solid #aaa;
+	box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    }
+}
+
+#breadcrumbs {
+    margin-top: 1em;
+}
+
+#sic-footer {
+    background: #616272;
+    color: #bdc3c7;
+    padding: 1em 0;
+    p {
+	font-size: 0.8rem;
+	a {
+	    color: white;
+	}
+    }
+    .logo-conicyt {
+	height: 90px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+	margin-right: 1em;
+    }
+}
+
+#heading-area {
+    background: #e67e22 image-url('bg.jpg');
+    h1, p {
+	color: white;
+    }
+    a {
+	font-weight: bold;
+	color: white;
+	border-bottom: 1px dotted white;
+    }
+}
+
+#top-menu-nav {
+    .sub-nav {
+	margin: 0;
+	dt, dd {
+	    a img {
+		height: 80px; // antes era 50
+	    }
+	}
+	dt {
+	    padding: 0.5em 1em 0em 2em;
+	}
+	dd {
+	    padding: 1.5em 0 0 0;
+	    margin-bottom: 0;
+	    &.social {
+		font-size: 2.3em;
+		padding: 0 0.1em;
+	    }
+	}
+    }
+}
+
+.top-bar-section .dropdown.sic-dropdown {
+    border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.2);
+    &>li {
+	&>a {
+	    background: white;
+	    padding: 4px 1em;
+	    &:hover {
+		background: #eee;
+	    }
+	    img {
+		height: 30px;
+	    }
+	}
+    }
+}
+
+ul.icon-listing {
+    list-style: none;
+    margin: 0 0 2em -1em;
+    li {
+	display: block;
+	a {
+	    display: block;
+	    padding: 0.3em 1em;
+	    &:hover {
+		background: #eee;
+	    }
+	    i {
+		color: #E67E22;
+		margin-right: 0.5em;
+	    }
+	}
+    }
+}
+
+/* .alert-box a, .alert-box a:hover { */
+/*     color: white; */
+/*     font-weight: bold; */
+/*     border-bottom: 1px dotted white; */
+/* } */
+
+#top-menu-nav-mobile {
+    .mobile-logo {
+	text-align: center;
+	img {
+	    max-width: 100%;
+	    margin: 1em auto;
+	}
+    }
+    ul {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	box-shadow: 0 0 4px #eee;
+	li {
+	    padding: 4px 1em;
+	    display: block;
+	    border-bottom: 1px solid #ddd;
+	    &:hover {
+		background: #eee;
+	    }
+	    &:last-of-type {
+		border-bottom: none;
+	    }
+	}
+    }
+    div.social-links {
+	text-align: center;
+	a i {
+	    font-size: 3em;
+	    margin: 0.1em;
+	}
+    }
+}
+
+#sic-footer {
+    @include grid-row($behavior: false);
+    max-width: 100%;
+    @media #{$small-only} {
+	.sic-info {	@include grid-column($columns: 12); }
+	.conicyt-info { @include grid-column($float: left); }
+    }
+    @media #{$medium-up} {
+	.sic-info {	@include grid-column($float: left); }
+	.conicyt-info { @include grid-column($float: right); }
+    }
+}
+
+#expositores > div.row {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#programa {
+    dt {
+	float: left;
+	clear: left;
+	width: 80px;
+	text-align: right;
+	font-weight: bold;
+	color: #E67E22;
+	font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	text-rendering: optimizelegibility;
+    }
+    dd { margin: 0 0 0 100px; padding: 0 0 1em 0em; }
+}
+audio {
+    width: 100%;
+    display: block;
+}
+div.panel.audios label {
+    display: block;
+    margin: 6px 0 10px 0;
+}

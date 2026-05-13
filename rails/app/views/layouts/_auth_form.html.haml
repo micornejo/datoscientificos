@@ -1,0 +1,31 @@
+%div#auth-form-modal.reveal-modal{ "data-reveal" => true }
+  %h1 Iniciar sesión
+  %div.row
+    %div.large-6.columns
+      %h2 Redes sociales
+      %p Para ininciar sesión, puede usar su identidad en cualquiera de las siguientes redes sociales:
+      %ul.inline-list{ style: 'font-size: 3em' }
+        %li
+          %a{ :href => '/auth/twitter' }
+            %i.fi-social-twitter
+        %li
+          %a{ :href => '/auth/facebook' }
+            %i.fi-social-facebook
+    %div.large-6.columns
+      %h2 Contraseña
+      %p
+        O también, puede
+        %a{ href: '#', 'data-reveal-id' => 'identity-register-form-modal', 'data-reveal' => true }
+          registrarse en este sitio
+        e iniciar sesión con un nombre de usuario y contraseña.
+      %form{:method => 'post', :noValidate => 'noValidate', :action => '/auth/identity/callback' }
+        %div.row
+          %div.large-12.columns
+            %div.field
+              %label{'for' => 'auth_key'} Email
+              %input{'type' => 'email', 'id' => 'auth_key', 'name' => 'auth_key' }/
+            %div.field
+              %label{'for' => 'password'} Contraseña
+              %input{'type' => 'password', 'id' => 'password', 'name' => 'password'}/
+            %button{'type' => 'submit'} Iniciar sesión
+  %a.close-reveal-modal &#215;

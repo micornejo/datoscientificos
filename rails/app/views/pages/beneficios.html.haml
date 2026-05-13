@@ -1,0 +1,37 @@
+%div#heading-area
+  %div.row
+    %div.large-12.column
+      %h1 Compartir tus datos beneficia a todos
+      %p.lead
+        El acceso a la información científica y a los datos de investigación
+        beneficia a los investigadores que abren sus datos, a los
+        investigadores que pueden acceder a bases de datos provistas por
+        otros investigadores y a la sociedad en general.
+%div.row
+  %div.large-12.columns= render 'layouts/breadcrumbs'
+%div.row
+  %div.large-4.column
+    %h3= link_to "Compartir tus datos aumenta las citas de tus artículos", :action => 'beneficio_investigador'
+    %p= image_tag 'slide1.png'
+    %p
+      Un estudio sobre investigaciones clínicas del cáncer reveló que
+      aquellas publicaciones cuyos datos estaban disponibles fueron
+      citadas un 69% más que aquellas que no liberaron sus datos.
+    %p= link_to 'Leer más', { :action => 'beneficio_investigador'}, :class => 'button tiny'
+  %div.large-4.column
+    %h3= link_to 'Preservar y compartir genera un beneficio público', :action => 'beneficio_publico'
+    %p= image_tag 'slide2.png'
+    %p
+      Parece evidente que el acceso a los datos incrementa el impacto de una
+      investigación, acelera el avance de la ciencia y aumenta los retornos
+      de lo invertido en investigación.
+    %p= link_to 'Leer más', { :action => 'beneficio_publico'}, :class => 'button tiny'
+  %div.large-4.column
+    %h3= link_to 'El mundo avanza hacia compartir los datos de investigación', :action => 'tendencia_mundial'
+    %p= image_tag 'slide3.png'
+    %p
+      Numerosos países y organizaciones internacionales han acordado
+      compartir y preservar los datos de investigación científica.
+      Ejemplos de ellos son la OECD, la Unión Europea, el G8 y la UNESCO.
+    %p= link_to 'Leer más', { :action => 'tendencia_mundial'}, :class => 'button tiny'
+

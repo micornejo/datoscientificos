@@ -1,0 +1,20 @@
+- if current_user and current_user.registered?(request.url)
+  
+  %div.alert-box.success{ 'data-alert' => true }
+    = current_user.name
+    su registro ya ha sido ingresado.
+  %p
+    Lo esperamos en este encuentro para discutir
+    sobre la política de preservación y acceso a datos e información
+    científicos que Chile necesita.
+  %p
+    %strong
+      CUPOS AGOTADOS
+- else
+  %p
+    Los cupos de este encuentro se han agotado. Lo invitamos a
+    participar de los próximos eventos y a informarse a través de
+    este sitio de los avances y discusiones en la materia.
+  %p
+    %strong
+      CUPOS AGOTADOS

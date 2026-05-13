@@ -1,0 +1,21 @@
+%h1 Listing event_registrations
+
+%table
+  %tr
+    %th User
+    %th Event url
+    %th
+    %th
+    %th
+
+  - @event_registrations.each do |event_registration|
+    %tr
+      %td= event_registration.user_id
+      %td= event_registration.event_url
+      %td= link_to 'Show', event_registration
+      %td= link_to 'Edit', edit_event_registration_path(event_registration)
+      %td= link_to 'Destroy', event_registration, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Event registration', new_event_registration_path

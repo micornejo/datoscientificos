@@ -1,0 +1,16 @@
+%li
+  - title = '¿El acceso abierto implica renunciar a la propiedad sobre los datos?'
+  - n = 6
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      No. El acceso abierto está estrechamente vinculado con la titularidad
+      de los datos cuyo acceso se ofrece. Si existen derechos de autor sobre
+      los datos compilados, ellos se mantienen intactos incluso si la
+      compilación construida a partir de ellos ha sido liberada.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

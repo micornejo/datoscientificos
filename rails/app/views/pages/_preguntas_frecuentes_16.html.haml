@@ -1,0 +1,13 @@
+%li
+  - title = '¿Puedo obtener una exención al acceso abierto a datos cuando existan patentes involucradas o considerando mis compromisos internacionales?'
+  - n = 16
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Esto depende de la política de datos abiertos. Una política puede considerar un mecanismo para otorgar exenciones por razones fundadas, tales como la existencia de patentes involucradas, modelos de negocios o compromisos internacionales. Sin embargo, una política de datos abiertos también puede poner plazos máximos a tales exenciones.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

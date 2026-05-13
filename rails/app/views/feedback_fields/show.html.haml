@@ -1,0 +1,27 @@
+%div.row
+  %div.large-12.columns
+    %h1 Respuestas
+    %dl
+      %dt Id
+      %dd= @field.id
+      %dt Título
+      %dd= @field.title
+      %dt Tipo
+      %dd= @field.type
+      - if @field.description
+        %dt Descripción
+        %dd= @field.description
+    %table
+      %tr
+        %th Fecha
+        %th Respuesta
+        %th Usuario
+        %th Post
+        %th Estado
+      - @field.entries.each do |entry|
+        %tr
+          %td= entry.created_at
+          %td= entry.value
+          %td= entry.user ? entry.user.name : '-'
+          %td= entry.post_id
+          %td= entry.status

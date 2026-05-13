@@ -1,0 +1,29 @@
+%li
+  - title = 'Considerar el uso de bases de datos'
+  - n = 7
+  - id = "good-practice-datos-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      En muchos casos puede que los datos estén contenidos en un archivo
+      y sean procesados mediante alguna aplicación disponible o que haya
+      sido creada durante la investigación. En estos casos, cuando se
+      trate de archivos pequeños, publicarlos en un repositorio pareciera
+      ser el camino adecuado. En cambio, cuando los investigadores
+      necesitan gestionar los datos de manera colaborativa, resulta más
+      apropiado usar una base de datos.
+    %p
+      Garantizar el acceso a datos contenidos en una base de datos implica
+      aspectos adicionales a tomar en cuenta. Entregar acceso de lectura a
+      una base de datos puede ser algo complejo cuando hay operaciones que
+      implican mucho costo de cómputo. Además, gestionar una base de datos
+      requiere definir permisos de lectura y de escritura para los distintos
+      recursos albergados. Por ello, no resulta claro cómo extender la
+      definición de “abierto” a las bases de datos, pero un requisito
+      razonable es permitir a todos la posibilidad de replicar los datos en
+      una base de datos propia.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

@@ -1,0 +1,2 @@
+module FeedbackEntriesHelper
+end

@@ -1,0 +1,16 @@
+%li
+  - title = '¿Quién es el dueño de los datos?'
+  - n = 4
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      De acuerdo con la ley chilena, el dueño o titular de los datos que
+      componen la base de datos es quien haya materialmente creado la obra
+      original. En el caso que los datos no sean obras, los datos no tendrán
+      titular y podrán ser libremente utilizados por terceros.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

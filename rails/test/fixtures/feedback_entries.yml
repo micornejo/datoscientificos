@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  feedback_field_id: MyString
+  user_id: 1
+  value: MyText
+  status: MyString
+  post_id: MyString
+
+two:
+  feedback_field_id: MyString
+  user_id: 1
+  value: MyText
+  status: MyString
+  post_id: MyString

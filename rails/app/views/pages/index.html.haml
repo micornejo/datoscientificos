@@ -1,0 +1,104 @@
+%div#heading-area
+  %div.row
+    %div.large-12.column
+      %h1 La Ciencia la hacemos entre todos
+      %p.lead
+        Participa con tu opinión, experiencias y conocimiento en la definición de
+        una
+        =link_to 'Política de datos abiertos', :action => 'politica'
+        para las investigaciones científicas.
+%div#landing-banner
+  %div.row
+    %div.large-10.columns
+      %ul{ 'data-orbit' => true, 'data-options' => 'animation_speed:1000;timer_speed:2000;' }
+        %li
+          %div.row
+            %div.large-12.columns
+              %h3 ¿Cómo garantizar el acceso a información y datos científicos?
+              %p
+                Chile necesita una política de acceso y preservación de información y
+                datos de investigaciones científicas financiadas con fondos públicos.
+                CONICYT ha elaborado
+                = link_to('una propuesta', :controller => 'pages', :action => 'documentos') + ','
+                pero necesitamos su opinión para perfeccionarla.
+              %a.feedback-landing.button Esperamos su opinión
+        %li
+          %div.row
+            %div.large-12.columns
+              %div.row
+                %div.large-6.column
+                  %div.flex-video.widescreen.vimeo
+                    %iframe{'src' => 'http://player.vimeo.com/video/111111958', 'width' => '300', 'height' => '169', 'frameborder' => '0', 'webkitAllowFullScreen' => true, 'mozallowfullscreen' => true, 'allowFullScreen' => true}
+                %div.large-6.column
+                  %h4
+                    Patricia Muñoz
+                  %p El camino hacia la implementación de una política de acceso y preservación para los datos de investigación y la información científica 
+                  = link_to 'Ver más', {action: 'noticia_2'}, class: 'button'
+        %li
+          %div.row
+            %div.large-12.columns
+              %div.row
+                %div.large-6.column
+                  %div.flex-video.widescreen.vimeo
+                    %iframe{'src' => 'http://player.vimeo.com/video/111124136', 'width' => '300', 'height' => '169', 'frameborder' => '0', 'webkitAllowFullScreen' => true, 'mozallowfullscreen' => true, 'allowFullScreen' => true}
+                %div.large-6.column
+                  %h4
+                    Ronald Cancino y Patricio Padilla
+                  %p Elementos diagnósticos y estratégicos en materia de Políticas de Gestión de datos de Investigación e Información Científica en Chile
+                  = link_to 'Ver más', {action: 'noticia_2'}, class: 'button'
+        %li
+          %div.row
+            %div.large-12.columns
+              %div.row
+                %div.large-6.column
+                  %div.flex-video.widescreen.vimeo
+                    %iframe{'src' => 'http://player.vimeo.com/video/111124138', 'width' => '300', 'height' => '169', 'frameborder' => '0', 'webkitAllowFullScreen' => true, 'mozallowfullscreen' => true, 'allowFullScreen' => true}
+                %div.large-6.column
+                  %h4
+                    Juan Carlos Lara
+                  %p Aspectos legales sobre los Datos Abiertos para la Ciencia y la Investigación Científica en Chile
+                  = link_to 'Ver más', {action: 'noticia_2'}, class: 'button'
+        %li
+          %div.row
+            %div.large-12.columns
+              %div.row
+                %div.large-6.column
+                  %div.flex-video.widescreen.vimeo
+                    %iframe{'src' => 'http://player.vimeo.com/video/111124137', 'width' => '300', 'height' => '169', 'frameborder' => '0', 'webkitAllowFullScreen' => true, 'mozallowfullscreen' => true, 'allowFullScreen' => true}
+                %div.large-6.column
+                  %h4
+                    Claudio Gutiérrez
+                  %p Una propuesta para datos científicos abiertos en Chile
+                  = link_to 'Ver más', {action: 'noticia_2'}, class: 'button'
+    %div.large-2.columns
+      %p
+        %span.has-tip{ 'data-tooltip' => true, title: 'Descargar documento' }
+          = link_to '', {:controller => 'pages', :action => 'documentos'}, :class => 'portada-manual'
+%div#grey-row
+  %div#videos{:style => 'width: 70%; float: left'}
+    %ul{ 'data-orbit' => true, 'data-options' => 'animation_speed:1000;timer_speed:3000;' }
+      %li
+        %div.row
+          %div.large-6.column
+            %h3 Un elemento sustancial de la Ciencia es la idea de la circulación abierta de la información.
+            %p Entrevista al profesor Claudio Gutiérrez del departamento de Ciencias de la Computación de la Universidad de Chile.
+            %p
+              %a.button.tiny{:href => '/testimonios'} Ver más vídeos
+          %div.large-6.column
+            %div.flex-video.widescreen.vimeo
+              %iframe{'src' => 'http://player.vimeo.com/video/84186410', 'width' => '300', 'height' => '169', 'frameborder' => '0', 'webkitAllowFullScreen' => true, 'mozallowfullscreen' => true, 'allowFullScreen' => true}
+      %li
+        %div.row
+          %div.large-6.column
+            %h3 Para compartir el saber hay que minimizar la fricción que producen los derechos de propiedad intelectual.
+            %p Francisco Vera, Director de Proyectos de la ONG Derechos Digitales presenta una aproximación a las implicancias legales de la apertura de datos.
+            %p
+              %a.button.tiny{:href => '/testimonios'} Ver más vídeos
+          %div.large-6.column
+            %div.flex-video.widescreen.vimeo
+              %iframe{'src' => 'http://player.vimeo.com/video/85888085', 'width' => '300', 'height' => '169', 'frameborder' => '0', 'webkitAllowFullScreen' => true, 'mozallowfullscreen' => true, 'allowFullScreen' => true}
+  %div#twitter-timeline{:style => 'width: 30%; float: left; padding: 12px;'}
+    %a.twitter-timeline{ :href => "https://twitter.com/DatosCientific", 'data-widget-id' => "432690030398562304" } Twitter
+    :javascript
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+

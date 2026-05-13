@@ -1,0 +1,28 @@
+%li
+  - title = 'Utilizar una licencia abierta'
+  - n = 1
+  - id = "good-practice-datos-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Se recomienda usar la licencia Creative Commons Cero (CC0). CC0 es
+      un modelo de licenciamiento que dedica e identifica una obra como
+      parte del dominio público. Permite al titular de los derechos autorizar
+      el uso de las obras (los datos, en este caso) por terceras personas.
+    %p
+      En la actualidad, la Licencia CC0 se emplea en diversas iniciativas
+      para facilitar el acceso. La British Library ha liberado cerca del 20%
+      de su información de catalogación con más de tres millones de registros.
+      La Organización Europea para la Investigación Nuclear, OpenLibrary y
+      OpenJurist han usado CC0 para liberar datos bibliográficos, al igual
+      que la Biblioteca, Archivo y Museo digital Europeana; el repositorio
+      de datos genéticos de Genomes Unzipped; el repositorio de fotografía e
+      imágenes aéreas y satelitales de MichiganView y el portal de datos
+      abiertos del gobierno de Holanda. Otros organismos internacionales
+      consideran usar la Licencia CC0 como la herramienta legal para poner
+      sus contenidos a disposición de los usuarios.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

@@ -1,0 +1,213 @@
+%div#heading-area
+  %div.row
+    %div.large-12.columns
+      %h1 1er Encuentro de Datos Científicos Abiertos
+      %p.lead
+        La Ciencia la hacemos entre todos
+%div.row
+  %div.large-12.columns
+    = render 'layouts/breadcrumbs'
+%div
+  %div.row
+    %div.large-7.columns
+      %h2 Lugar y fecha
+      %p
+        Viernes 26 de septiembre de 2014, 9:30 horas, en la Sala Sesiones
+        del Ex Congreso Nacional, Morandé 441, Santiago, Chile.
+      <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-70.65928816795349%2C-33.44065420748007%2C-70.64823746681213%2C-33.43574796012787&amp;layer=mapnik&amp;marker=-33.43820111848173%2C-70.65376281738281" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=-33.43820&amp;mlon=-70.65376#map=17/-33.43820/-70.65376">Ver mapa más grande</a></small>
+    %div.large-5.columns
+      %div.panel
+        %h2
+          Inscripción
+          %i.fi-pencil
+        %div= render 'inscripcion_evento'
+%div
+  %div.row
+    %div.large-12.columns
+      %h2 Programa
+      %dl#programa
+        %dt 09:30
+        %dd Recepción.
+        %dt 10:00
+        %dd Saludo de bienvenida.
+        %dt 10:10
+        %dd
+          Charla:
+          %h4
+            El camino hacia la implementación de una política de
+            acceso y preservación para los datos de investigación y la
+            información científica
+          %ul.no-bullet
+            %li
+              Patricia Muñoz, Directora del Programa de Información
+              Científica de CONICYT.
+          %p
+            Se presenta el camino recorrido en pos de la
+            implementación de una política de acceso y preservación
+            para los datos de investigación y la información
+            científica desde el mandato inicial de la OECD hasta la
+            fecha.
+        %dt 10:25
+        %dd
+          Charla:
+          %h4
+            Elementos diagnósticos y estratégicos en materia de
+            Políticas de Gestión de datos de Investigación e Información
+            Científica en Chile
+          %ul.no-bullet
+            %li
+              Ronald Cancino, Académico Departamento de Ciencias Sociales.
+              Coordinador Grupo Estudios Cultura, Ciencia y Tecnología,
+              Universidad de la Frontera.
+            %li
+              Patricio Padilla, Coordinación Científica y Académica,
+              Instituto de Desarrollo Regional y Local, Universidad de la
+              Frontera.
+          %p
+            La presentación, expone el diseño, proceso y resultados del estudio “Estado del Arte nacional e internacional en materia de gestión de datos de investigación e información científica y tecnológica y recomendaciones de buenas practicas”. En este sentido, propone elementos diagnósticos y reflexiones estratégicas de políticas de ciencia, tecnología e innovación, a la luz del actual proceso de construcción de políticas y difusión de sus resultados a la comunidad nacional.
+        %dt 10:40
+        %dd Preguntas del público.
+        %dt 11:00
+        %dd Café.
+        %dt 11:20
+        %dd
+          Charla:
+          %h4
+            Aspectos legales sobre los Datos Abiertos para la Ciencia
+            y la Investigación Científica en Chile
+          %ul.no-bullet
+            %li
+              Juan Carlos Lara,
+              Director de Investigación de la
+              ONG Derechos Digitales.
+          %p
+            El desarrollo de una política de datos abiertos y de información
+            científica abierta requiere no sólo pensar en estándares técnicos
+            sino también legales. En esta charla se explorarán distintas
+            aproximaciones a lo abierto como paradigma legal, con consecuencias
+            directas en la manera en que el conocimiento científico
+            puede distribuirse a través de Internet.
+        %dt 11:35
+        %dd
+          Charla:
+          %h4
+            Una propuesta para datos científicos abiertos en Chile
+          %ul.no-bullet
+            %li
+              Claudio Gutiérrez, Académico del Departamento de Ciencias de la
+              Computación de la Universidad de Chile.
+          %p
+            Se presenta una propuesta para construir una infraestructura
+            para la publicación y el acceso a datos científicos en Chile.
+            Nos enfocaremos principalmente en los desafíos técnicos (desde
+            el punto de vista de ciencias de la información y computación)
+            que una iniciativa como esta conlleva.
+        %dt 11:50
+        %dd Preguntas del público.
+        %dt 12:10
+        %dd Cierre.
+      %h2 Expositores
+  %div#expositores
+    %div.row
+      %div.large-4.columns
+        %p
+          = image_tag 'expositores/patricia_munoz_gris.jpg'
+        %ul.inline-list
+          %li
+      %div.large-8.columns
+        %h3
+          Patricia Muñoz
+        %p
+          Licenciada en Ciencias de la Información, Magíster en Documentación Digital de la Universidad Pompeu Fabra. Directora del Programa de Información Científica de la Comisión Nacional de Investigación Científica y Tecnológica, CONICYT. Se ha especializado en Gestión de Información Científica y Tecnológica, siendo representante de Chile en diversos comités de expertos internacionales, participando en programas y proyectos de alcance nacional e internacional con énfasis en potenciar y asegurar el acceso y visibilidad al conocimiento científico y tecnológico.
+
+        %p
+          Ha sido representante de Chile, ASFA (Aquatics Science Fisheries Abstracts) BOARD Base datos gestionada por FAO, coordinadora para América del Sur del proyecto “Repositorio Digital Latinoamericano de Ciencias Marinas”, www.oceandocs.net. Fue integrante del Grupo de Expertos en Información Marina GEMIN, perteneciente a la Comisión Internacional de los Océanos de la UNESCO. Actualmente en CONICYT es Directora del Programa de Información Científica, está desarrollando y liderando proyectos asociados al acceso y visibilidad de proyectos y resultados de los instrumentos de financiamiento gestionados por los Programas de CONICYT, mediante la implementación repositorios digitales en la perspectiva de asegurar el acceso y la preservación digital así como también implementar un portal con indicadores de productividad científica.
+    %div.row
+      %div.large-4.columns
+        %p
+          = image_tag 'expositores/claudio_gutierrez.jpg'
+        %ul.inline-list
+          %li
+            %a{ href: 'http://www.dcc.uchile.cl/~cgutierr', target: '_blank' }
+              %i.fi-home
+      %div.large-8.columns
+        %h3
+          %a{ href: 'http://www.dcc.uchile.cl/~cgutierr', target: '_blank' }
+            Claudio Gutiérrez
+        %p
+          Profesor asociado del Departamento de Ciencias de la Computación
+          de la Universidad de Chile. Su investigación se concentra
+          en las áreas de gestión de datos, redes sociales y semántica en la Web,
+          donde publicado más de 50 artículos técnicos, editado varios libros y
+          recibido numerosos reconocimientos internacionales. Además, ha
+          participado en varios proyectos de publicación de información y
+          datos en organismos públicos.
+    %div.row
+      %div.large-4.columns
+        %p
+          = image_tag 'expositores/JC.jpg'
+        %ul.inline-list
+          %li
+            %a{ href: 'http://twitter.com/donJC', target: '_blank' }
+              %i.fi-social-twitter
+      %div.large-8.columns
+        %h3
+          %a Juan Carlos Lara
+        %p
+          Abogado, Director de Investigación de la
+          ONG Derechos Digitales. Ha participado en múltiples proyectos
+          asociados con los derechos legales en torno a los datos e
+          información científicos. Entre ellos destacan el diseño de una
+          Política de Acceso a Datos de Investigación e Información
+          Científica para CONICYT, la implementación de un repositorio
+          institucional en línea para el sistema de Bibliotecas
+          SiB-USACH y la investigación "Buenas Prácticas y Políticas
+          Editoriales Open Access para Publicaciones Académicas
+          Latinoamericanas" financiado por el Fondo Regional para la
+          Innovación Digital en América Latina y el Caribe.
+    %div.row
+      %div.large-4.columns
+        %p
+          = image_tag 'expositores/ronald_cancino_gris.jpg'
+        %ul.inline-list
+          %li
+            %a{ href: 'http://cis.ufro.cl/index.php?option=com_content&view=article&id=55&Itemid=67', target: '_blank' }
+              %i.fi-home
+      %div.large-8.columns
+        %h3
+          %a{ href: 'http://cis.ufro.cl/index.php?option=com_content&view=article&id=55&Itemid=67', target: '_blank' }
+            Ronald Cancino
+        %p
+          Profesor del Departamento de Ciencias Sociales y Coordinador
+          Grupo Estudios Cultura, Ciencia y Tecnología de la Universidad de
+          la Frontera.
+        %p
+          En 2010 dirigió la consultoría solicitada por CONICYT en la que se
+          estudió el estado del arte nacional e internacional en materia de gestión
+          de datos de investigación e información científica y tecnológica.
+    %div.row
+      %div.large-4.columns
+        %p
+          = image_tag 'expositores/patricio_padilla_gris.jpg'
+        %ul.inline-list
+          %li
+            %a{ href: 'http://ufro.academia.edu/patopadilla', target: '_blank' }
+              %i.fi-home
+          %li
+            %a{ href: 'https://twitter.com/patopadilla', target: '_blank' }
+              %i.fi-social-twitter
+      %div.large-8.columns
+        %h3
+          %a{ href: 'http://ufro.academia.edu/patopadilla', target: '_blank' }
+            Patricio Padilla
+        %p
+          Coordinador Académico del Instituto de Desarrollo Local y Regional
+          (IDER) de la Universidad de La Frontera. Ha realizado numerosos
+          trabajos y publicaciones en torno a las normativas de acceso a
+          datos e información
+          de proyectos financiados con fondos públicos. En particular,
+          participó junto con Ronald Cancino en la consultoría solicitada
+          por CONICYT en la que se
+          estudió el estado del arte nacional e internacional en materia de gestión
+          de datos de investigación e información científica y tecnológica.
+  

@@ -1,0 +1,73 @@
+%div#heading-area
+  %div.row
+    %div.large-12.column
+      %h1
+        ¿Sabías que compartir tus datos de investigación aumenta
+        las citas de tus artículos?
+      %p.lead
+        Un estudio sobre investigaciones clínicas del cáncer reveló
+        que aquellas cuyos datos estaban disponibles fueron citadas
+        un 69% más que aquellas que no liberaron sus datos.
+%div.row
+  %div.large-12.columns= render 'layouts/breadcrumbs'
+%div.row
+  %div.large-7.columns
+    %p
+      Hoy en día es ampliamente aceptado que publicar los datos de investigación
+      tiene un beneficio público, fortaleciendo el desarrollo de la
+      ciencia al permitir la reutilización de los datos y facilitar
+      la validación de las hipótesis presentadas. Sin embargo, no para
+      todos resulta claro que publicar los datos de una investigación
+      podría tener un beneficio para quienes la desarrollan. En algunas
+      áreas existe el prejuicio de que exponer los datos de investigación
+      está sólo asociado a un mayor esfuerzo en la publicación y a perder
+      la ventaja que significa contar con datos a los que otros no pueden
+      acceder.
+    %p
+      El principal beneficio individual de publicar los datos es aumentar
+      la visibilidad e impacto de una publicación. Heather Piwowar y su
+      equipo econtraron una correlación entre publicar los datos de una
+      investigación y las cantidad de citas que esta recibe
+      [<a href="#ref-piwowar-2007">1</a>].
+    %blockquote
+      %p
+        Se examinaron las citaciones históricas de 85 investigaciones
+        clínicas sobre el cáncer respecto a la disponibilidad de sus datos.
+        El 48% de las investigaciones que contaban con los datos públicamente
+        accesibles recibieron el 85% de las citaciones agregadas. Publicar
+        los datos mostró estar significativamente (p = 0.006) asociado con
+        un 69% en el incremento de las citaciones, independientemente de
+        impacto del journal, la fecha de publicación y el país de origen de
+        los investigadores, según la regresión lineal.
+    %p
+      El resultado obtenido no es sorprendente si se considera que el
+      contar con los datos hace que la investigación resulte más confiable
+      y que esta confianza pueda reafirmarse al tener la posibilidad de
+      replicar el ejercicio de análisis de los datos. Además, la
+      disponibilidad de datos permite la realización de otras
+      investigaciones que también aumentará la visibilidad de las
+      publicaciones originales.
+    %p
+      Los beneficios en el impacto de las investigaciones cuando los datos
+      de estas se encuentran disponibles para discutidos o reutilizados,
+      motivan a la Comisión Nacional de Investigación Científica y Tecnológica,
+      CONICYT, a invitar a la comunidad científica chilena a intercambiar ideas en
+      torno al diseño e implementación de una política nacional para el acceso
+      y la preservación de datos de investigación financiados con fondos
+      públicos, en el entendido de que los científicos y las instituciones
+      de investigación desempeñan un rol fundamental a la hora de garantizar
+      la preservación y facilitar el acceso a los datos. Contar con su
+      colaboración no sólo aumentará el impacto de sus propias investigaciones,
+      sino que también generará un activo que estará disponible para toda la
+      comunidad científica, lo que potenciará a la investigación en general.
+    %h2 Referencias
+    %ol
+      %li#ref-piwowar-2007
+        Piwowar HA, Day RS, Fridsma DB (2007)
+        %a{ :href => 'http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0000308', :target => '_blank' }
+          Sharing Detailed Research Data Is Associated with Increased Citation Rate.
+        PLoS ONE 2(3): e308. doi:10.1371/journal.pone.0000308.
+  %div.large-5.columns
+    %h2 Otras razones
+    = render 'beneficio_publico_resumen'
+    = render 'tendencia_mundial_resumen'

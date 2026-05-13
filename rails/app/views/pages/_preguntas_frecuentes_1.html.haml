@@ -1,0 +1,15 @@
+%li
+  - title = '¿Protege la propiedad intelectual los datos contenidos en una base de datos?'
+  - n = 1
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      El sistema legal de derechos de autor chileno sólo protege los
+      datos que integran una base de datos cuando en sí mismos son una
+      obra intelectual original.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

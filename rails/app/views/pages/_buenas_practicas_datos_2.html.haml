@@ -1,0 +1,24 @@
+%li
+  - title = 'Observar cómo lo hacen los pares'
+  - n = 2
+  - id = "good-practice-datos-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Las ciencias son diversas y heterogéneas. Los formatos y
+      procedimientos difieren entre las comunidades. Existen
+      formatos para codificar series de tiempo para sensores
+      meteorológicos, para modelar redes sociales, para codificar
+      secuencias de ADN, etc. Es posible que en su área exista un
+      formato estándar y abierto especializado para los datos de su
+      investigación. Al publicar en ese formato facilitará a sus pares
+      la reutilización de sus datos. Cuando no exista ese formato, lo
+      más conveniente es basarse en un formato estándar y genérico
+      como XML o HDF, que poseen una gran variedad de herramientas
+      para su manipulación. Además, están bien documentados lo que
+      permite ahorrar esfuerzo al momento de describir los datos.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

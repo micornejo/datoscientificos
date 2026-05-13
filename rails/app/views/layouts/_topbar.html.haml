@@ -1,0 +1,55 @@
+%nav.top-bar{ 'data-topbar' => true }
+  %section.top-bar-section
+    %div.left.hide-for-small
+      %ul
+        %li.has-dropdown
+          %a
+            = image_tag 'sic_chico.png'
+            &nbsp;
+            PLATAFORMAS Y SERVICIOS
+          %ul.dropdown.sic-dropdown
+            %li
+              %a{:href => 'http://www.informacioncientifica.cl'}
+                %img{ src: 'http://www.sic.informacioncientifica.cl/images/sic.png', alt: 'sic' }
+            %li
+              %a{:href => 'http://www.scielo.informacioncientifica.cl/'}
+                %img{ src: 'http://www.sic.informacioncientifica.cl/images/scielo.png', alt: 'scielo' }
+            %li
+              %a{:href => 'http://www.beic.cl/'}
+                %img{ src: 'http://www.sic.informacioncientifica.cl/images/beic.png', alt: 'beic' }
+            %li
+              %a{:href => 'http://www.repo.informacioncientifica.cl/' }
+                %img{ src: 'http://www.sic.informacioncientifica.cl/images/repositorio.png', alt: 'repo' }
+            %li
+              %a{:href => 'http://www.biblioteca.informacioncientifica.cl/'}
+                %img{ src: 'http://www.sic.informacioncientifica.cl/images/biblioteca.png', alt: 'biblioteca' }
+            %li
+              %a{:href => 'http://www.portaldelinvestigador.cl/'}
+                %img{ src: 'http://www.sic.informacioncientifica.cl/images/portal.png', alt: 'portal' }
+            %li
+              %a{:href => 'http://www.productividad.informacioncientifica.cl/'}
+                %img{ src: 'http://www.sic.informacioncientifica.cl/images/productividad.png', alt: 'productividad' }
+            %li
+              %a{:href => 'http://datoscientificos.cl/'}
+                %img{ src: 'http://www.sic.informacioncientifica.cl/images/datos.png', alt: 'datoscientificos' }
+            %li
+              %a{:href => 'http://www.issn.informacioncientifica.cl/'}
+                %img{ src: 'http://www.sic.informacioncientifica.cl/images/issn.png', alt: 'issn' }
+            %li
+              %a{:href => 'http://revistas.informacioncientifica.cl/'}
+                %img{ src: 'http://www.sic.informacioncientifica.cl/images/editores.png', alt: 'revistas' }
+            %li
+              %a{:href => 'http://www.redciencia.net/'}
+                %img{ src: 'http://www.sic.informacioncientifica.cl/images/redciencia.png', alt: 'redciencia' }
+    %ul.right
+      - if current_user
+        %li.has-dropdown
+          %a= current_user.name
+          %ul.dropdown
+            %li
+              %a{:href => '/sessions/close'} Cerrar sesión
+      - else
+        %li
+          %a.auth-form
+            %i.fi-torso
+            Ingresar

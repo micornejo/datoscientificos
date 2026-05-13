@@ -1,0 +1,14 @@
+%li
+  - title = '¿Puede otro centro de investigación utilizar los datos que pongo a disposición en cumplimiento del acceso abierto?'
+  - n = 12
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Sí. Una política de acceso abierto supone precisamente permitir a otros
+      centros de investigación y terceros en general acceder a los datos.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

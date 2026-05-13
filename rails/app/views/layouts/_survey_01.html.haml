@@ -1,0 +1,30 @@
+%div#feedback-landing-modal.feedback-form.reveal-modal{ "data-reveal" => true }
+  %h1 Queremos escuchar su opinión
+  %p
+    Su opinión es importante para definir entre todos la política de
+    datos abiertos que necesita CONICYT.
+  = form_tag('/feedback', remote: true) do
+    %div.row
+      %div.large-12.columns
+        %label
+          ¿Cree que Chile necesita una política de datos abiertos para
+          la investigación científica?
+        %input{ :type => 'radio', :name => 'fields[radio-1]', :value => 'si' }
+          %label Sí
+        %input{ :type => 'radio', :name => 'fields[radio-1]', :value => 'no' }
+          %label No
+        %input{ :type => 'radio', :name => 'fields[radio-1]', :value => 'nose' }
+          %label No sé
+    %div.row
+      %div.large-12.columns
+        %label ¿Cuál es su opinión?
+        %textarea{ :name => 'fields[text-1]', :placeholder => 'Ingrese su opinión en no más de 1000 caracteres' }
+    %div.row
+      %div.large-12.columns
+        %p
+          = submit_tag 'Enviar', :class => 'button'
+    %div.row
+      %div.large-12.columns
+        - unless current_user
+          = render 'layouts/auth_warning'
+  %a.close-reveal-modal &#215;

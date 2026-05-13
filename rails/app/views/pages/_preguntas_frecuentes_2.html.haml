@@ -1,0 +1,16 @@
+%li
+  - title = '¿Qué datos contenidos en una base de datos no están protegidos por derechos de autor?'
+  - n = 2
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Los datos no tienen protección cuando no son originales; por ejemplo,
+      cuando la base de datos se compone de un registro de temperaturas mínimas
+      y máximas en un determinado lugar, o un simple listado de nombres de
+      comunas y sus superficies y números de habitantes.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

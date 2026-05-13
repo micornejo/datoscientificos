@@ -1,0 +1,20 @@
+%li
+  - title = '¿Puedo ofrecer licencias pagadas sobre los datos de investigación a entidades interesadas?'
+  - n = 11
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Esta respuesta depende de la política de datos abiertos vigente.
+      Mientras los derechos de autor se sigan radicando en los beneficiarios
+      de los fondos y la política de acceso abierto no sea excluyente, es
+      posible que los titulares de los derechos ofrezcan licencias en paralelo,
+      que podrán ser a título gratuito u oneroso. En particular, la propuesta
+      de política de CONICYT cumple con estos dos requisitos, por lo que si
+      esta condición se mantuviese en la política que finalmente se adopte,
+      la respuesta sería sí.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

@@ -1,0 +1,19 @@
+%li
+  - title = '¿Puede una empresa copiar y vender los datos que pongo a disposición en cumplimiento del acceso abierto a datos?'
+  - n = 13
+  - id = "preguntas-frecuentes-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Sí. Cuando los datos se encuentran en dominio público, una empresa u
+      organización con fines de lucro podrá copiar y vender dichos datos,
+      sin que ello suponga que la empresa se los apropie. Los datos siguen
+      estando en dominio público. Incluso, si la empresa los vende en una
+      disposición original que les agregue valor, los datos por sí mismos no
+      dejarán de ser abiertos, sólo podrá ser una obra protegida la disposición
+      original de los datos creada por la empresa.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

@@ -1,0 +1,16 @@
+%li
+  - title = 'Asesorarse por especialistas'
+  - n = 2
+  - id = "good-practice-info-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      La publicación de información científica requiere del asesoramiento
+      por especialistas de las ciencias de la información, que puedan dar
+      directrices para la organización de la literatura científica
+      publicada y la agregación de metadatos para describirla.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

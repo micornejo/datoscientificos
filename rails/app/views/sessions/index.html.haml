@@ -1,0 +1,29 @@
+%h1 Listing sessions
+
+%table
+  %tr
+    %th User
+    %th Provider
+    %th Uid
+    %th Remote ip
+    %th User agent
+    %th Closed at
+    %th
+    %th
+    %th
+
+  - @sessions.each do |session|
+    %tr
+      %td= session.user_id
+      %td= session.provider
+      %td= session.uid
+      %td= session.remote_ip
+      %td= session.user_agent
+      %td= session.closed_at
+      %td= link_to 'Show', session
+      %td= link_to 'Edit', edit_session_path(session)
+      %td= link_to 'Destroy', session, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Session', new_session_path

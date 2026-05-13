@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Feedback field:
+  = @feedback_entry.feedback_field_id
+%p
+  %b User:
+  = @feedback_entry.user_id
+%p
+  %b Value:
+  = @feedback_entry.value
+%p
+  %b Status:
+  = @feedback_entry.status
+%p
+  %b Post:
+  = @feedback_entry.post_id
+
+= link_to 'Edit', edit_feedback_entry_path(@feedback_entry)
+\|
+= link_to 'Back', feedback_entries_path

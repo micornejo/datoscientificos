@@ -1,0 +1,23 @@
+%li
+  - title = 'Crear repositorios institucionales'
+  - n = 3
+  - id = "good-practice-info-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Si bien, publicar la literatura científica en un sitio web personal
+      es un primer paso para el acceso abierto, tiene el riesgo de que el
+      sitio sea borrado por descuido o que la información deje de estar
+      disponibles si algo le ocurre al dueño del sitio. Para que el acceso
+      a la información perdure, se recomienda publicarla en lugares más
+      estables como repositorios institucionales.
+    %p
+      Además de que facilitan la perdurabilidad de la información publicada,
+      los repositorios institucionales aumentan la visibilidad de las
+      publicaciones y permiten establecer vínculos entre ellas a través de
+      los metadatos.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;

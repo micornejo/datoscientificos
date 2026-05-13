@@ -1,0 +1,29 @@
+%div.row
+  %div.large-12
+    %h1 Nuevo usuario
+    = form_tag "/auth/identity/register" do
+      - if @identity && @identity.errors.any?
+        .error_messages
+          %h2
+            = pluralize(@identity.errors.count, "error")
+            prohibited this account from being saved:
+          %ul
+            - @identity.errors.full_messages.each do |msg|
+              %li= msg
+      .field
+        %label Nombre
+        %br/
+        = text_field_tag :name, @identity.try(:name)
+      .field
+        %label Email
+        %br/
+        = text_field_tag :email, @identity.try(:email)
+      .field
+        %label Contraseña
+        %br/
+        = password_field_tag :password
+      .field
+        %label Repita su contraseña
+        %br/
+        = password_field_tag :password_confirmation
+      .actions= submit_tag "Registrar", :class => 'button'

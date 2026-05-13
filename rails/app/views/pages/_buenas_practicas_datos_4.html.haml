@@ -1,0 +1,26 @@
+%li
+  - title = 'Describir los datos'
+  - n = 4
+  - id = "good-practice-datos-#{n}"
+  %a{ 'modal-open' => "##{id}" }
+    %i.fi-arrow-right
+    = title
+  %div.reveal-modal{ "data-reveal" => true, id: id }
+    %h1 #{n}. #{title}
+    %p
+      Para ayudar a usar los datos publicados, hay que proveer una
+      descripción de los mismos: lo que contienen, quién los obtuvo,
+      cuándo, qué metodología se usó, el identificador del artículo
+      donde se generaron, cómo se estructuran y cómo se pueden usar.
+      Estas descripciones (o metadatos) pueden ir incrustadas en los
+      datos (como parte del archivo descargable) o en la ficha de un
+      catálogo de datos. Siempre que un formato de archivo permita
+      incrustar metadatos, es recomendable hacerlo.
+    %p
+      La Web es el estándar mundial para el intercambio de información
+      y de datos. En ella también existe un estándar denominado RDF que
+      permite describir datos y enlazarlos (en el nivel de los metadatos)
+      con otros datos publicados en la Web. Usar RDF para describir los
+      datos es una buena práctica.
+    %a.button{ 'modal-close' => "##{id}" } &#9666; &nbsp; Volver
+    %a.close-reveal-modal &#215;
